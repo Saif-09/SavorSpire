@@ -13,10 +13,10 @@ import cartIconDT from "@/app/assets/cart-icon-dt.svg";
 import hamburgerIcon from "@/app/assets/hamburger-icon-mob.svg";
 import closeIcon from "@/app/assets/close-icon-mob.svg"; // Assuming you have a close icon
 
-const Header = () => {
+const Header: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
+    const toggleMenu = (): void => {
         setMenuOpen(!menuOpen);
     };
 
@@ -123,12 +123,12 @@ const Header = () => {
             )}
 
             {/* Desktop Menu */}
-            <nav className="hidden md:flex justify-center items-center w-full max-w-[74rem] py-4 bg-isabelline mt-5">
+            <nav className="hidden md:flex justify-center items-center w-full max-w-[74rem] py-4 bg-isabelline mt-0">
                 <div className="flex justify-between w-full max-w-[75rem]">
-                    <Link href="/" className="text-2xl text-cadet-gray px-4 font-light">Home</Link>
-                    <Link href="/new-launches" className="text-2xl text-cadet-gray px-4 font-light">New Launches</Link>
-                    <Link href="/healthy-and-yummy" className="text-2xl text-cadet-gray font-light px-4">Healthy And Yummy</Link>
-                    <Link href="/exotic-range" className="text-2xl text-cadet-gray px-4 font-light">Exotic Range</Link>
+                    <Link href="/" className="text-base text-cadet-gray px-4 font-light">Home</Link>
+                    <Link href="/new-launches" className="text-base text-cadet-gray px-4 font-light">New Launches</Link>
+                    <Link href="/healthy-and-yummy" className="text-base text-cadet-gray font-light px-4">Healthy And Yummy</Link>
+                    <Link href="/exotic-range" className="text-base text-cadet-gray px-4 font-light">Exotic Range</Link>
                     
                 </div>
             </nav>
