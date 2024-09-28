@@ -54,13 +54,13 @@ const dummyProducts = [
     }
 ];
 
-const NewLaunches: React.FC = () => {
+const ExoticRange: React.FC = () => {
     return (
         <div className='w-screen bg-isabelline  md:px-[17.2rem] px-5 md:mt-[4.625rem] md:py-8 mt-6'>
             <div className='w-[100%] flex flex-row justify-between'>
-                <h2 className='md:text-xl text-base font-medium md:font-semibold text-eerie-black'>New Launches</h2>
+                <h2 className='md:text-xl text-base font-medium md:font-semibold text-eerie-black'>Exotic Range</h2>
+                <Link href="/product-category/exotic-range"> <h4 className='text-fawn text-base md:text-lg'>See all</h4></Link>
 
-                <Link href="/product-category/new-launches" className="text-base text-cadet-gray px-4 font-light"><h4 className='text-fawn text-base md:text-lg'>See all</h4></Link>
                 
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 md:mt-8 pl-[1.051vw]'>
@@ -72,4 +72,4 @@ const NewLaunches: React.FC = () => {
     );
 };
 
-export default NewLaunches;
+export default ExoticRange;

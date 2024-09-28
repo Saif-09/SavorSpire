@@ -102,9 +102,9 @@ const Header: React.FC = () => {
                 <div className="absolute top-[4.5rem] left-0 w-full bg-white z-20 flex flex-col p-6 shadow-md">
                     <nav className="flex flex-col gap-4">
                         <Link href="/" className="text-lg text-black" onClick={toggleMenu}>Home</Link>
-                        <Link href="/new-launches" className="text-lg text-black" onClick={toggleMenu}>New Launches</Link>
-                        <Link href="/healthy-and-yummy" className="text-lg text-black" onClick={toggleMenu}>Healthy And Yummy</Link>
-                        <Link href="/exotic-range" className="text-lg text-black" onClick={toggleMenu}>Exotic Range</Link>
+                        <Link href="/product-category/new-launches" className="text-lg text-black" onClick={toggleMenu}>New Launches</Link>
+                        <Link href="/product-category/healthy-and-yummy" className="text-lg text-black" onClick={toggleMenu}>Healthy And Yummy</Link>
+                        <Link href="/product-category/exotic-range" className="text-lg text-black" onClick={toggleMenu}>Exotic Range</Link>
                         <Link href="/contact" className="text-lg text-black" onClick={toggleMenu}>Contact Us</Link>
                     </nav>
                     <div className="mt-8">
@@ -126,9 +126,9 @@ const Header: React.FC = () => {
             <nav className="hidden md:flex justify-center items-center w-full max-w-[74rem] py-4 bg-isabelline mt-0">
                 <div className="flex justify-between w-full max-w-[75rem]">
                     <Link href="/" className="text-base text-cadet-gray px-4 font-light">Home</Link>
-                    <Link href="/new-launches" className="text-base text-cadet-gray px-4 font-light">New Launches</Link>
-                    <Link href="/healthy-and-yummy" className="text-base text-cadet-gray font-light px-4">Healthy And Yummy</Link>
-                    <Link href="/exotic-range" className="text-base text-cadet-gray px-4 font-light">Exotic Range</Link>
+                    <Link href="/product-category/new-launches" className="text-base text-cadet-gray px-4 font-light">New Launches</Link>
+                    <Link href="/product-category/healthy-and-yummy" className="text-base text-cadet-gray font-light px-4">Healthy And Yummy</Link>
+                    <Link href="/product-category/exotic-range" className="text-base text-cadet-gray px-4 font-light">Exotic Range</Link>
                     
                 </div>
             </nav>

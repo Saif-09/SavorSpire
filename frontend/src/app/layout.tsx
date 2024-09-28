@@ -18,14 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body className={inter.className}>
-      {/* <Toaster position="top-right" /> */}
-      {/* <CartProvider> */}
-        <Header />
+      <body className={inter.className}>
         {children}
-      {/* </CartProvider> */}
-      <Footer />
-    </body>
-  </html>
+      </body>
+    </html>
   );
 }
